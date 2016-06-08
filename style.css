@@ -2,11 +2,36 @@
   width: 150px;
   height: 221px;
 }
-
 #container{
-
+  background-color: grey;
+  height: 98%;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#picDiv{
+  background-color: tan;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#center_column{
-  
+#button{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
