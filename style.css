@@ -4,8 +4,8 @@
 }
 #container{
   background-color: grey;
-  height: 98%;
-  width: 98%;
+  height: 100%;
+  width: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,8 @@ h1{
 }
 #picDiv{
   background-color: tan;
-  width: 75%;
+  height: 95%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;

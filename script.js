@@ -27,13 +27,14 @@ button.addEventListener('click', function(event){
         var result = JSON.parse(request.responseText);
         console.log(result);
         picDiv.innerHTML='';
-        h1.innerHTML='';
+        // h1.innerHTML='';
         result.Search.forEach(function(movie){
           if(movie.Poster === "N/A"){
-            picDiv.innerHMTL = '<h1>Title: </h1' + '<h1>Not Shown</h1>';
-          }else {
-            picDiv.innerHTML += '<img src=' + movie.Poster + '>';
             picDiv.innerHTML += '<h1>Title: ' + movie.Title + '</h1>';
+            picDiv.innerHTML += '<img src="mockups/images/no_image.png">';
+          }else {
+            picDiv.innerHTML += '<h1>Title: ' + movie.Title + '</h1>';
+            picDiv.innerHTML += '<img src=' + movie.Poster + '>';
           }
         })
       }
